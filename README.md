@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 # GIT-HUB_TRAINING
+=======
+# HTML_CSS_PROJECTS
+>>>>>>> c5253a93852e9fd19e6e159f1410ca756667c64f
