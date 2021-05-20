@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Width del 100 para que pudiera crecer.
+Defini una altura para crear im tamano de relacion.
+display flex para poder mover los elementos hijos.
+movi los elementos hijos la izquierda.
+movi los elementos al centro, verticalmente. */
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Le di un width pero no se me ocurrio nada mas.
+En realidad borre y borre */
+.header-nav {
+    width: 300px;
+}
+/* Puse tamano de letra y quite los bullets
+display flex para que pudiera mover elementos
+hijos. creo que se pudo hacer algo en nav.
+Puse space avenlyy para que tuvieran el mismo
+espacio en el contenedor de 300px */
+.header-nav-ul {
+    font-size: 1.7rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+}
+/* Tamano para las imagenes. cuando intente con clases
+no pude hacerlo correctamente, ni hacerlo por separado */
+.header-nav-ul li img {
+    width: 30px;
+}
+
+/* Ancho al 100 y 83 de altura -7 de footer y 10 de header.footer-list
+display flex para mover los elementos, centrarlos y verticalmente 
+ponerlos en el centro. */
+main {
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* defini un tamano de w y h para limitar el contenedor principal. Los puse
+en column para que quedara uno debajo del otro. Importante, puse un div
+adentro para los buttons. verticalmente estan en el centro. */
+main section {
+    width: 500px;
+    height: 200px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+/* *se define tamano de logo de google */
+main section figure img{
+    width: 300px;
+}
+/* Se pone borde circular y un padding para que el elemento creciera. no estoy
+seguro de si puedo hacerlo de otra forma.  */
+main section input {
+    border-radius: 20px;
+    padding: 7px 30px 7px 30px;
+    width: 500px;
+}
+/* se anade paddig igual quie arriba, border circulares y row para que no queden en column. */
+main section button {
+    border-radius: 5px;
+    padding: 3px 20px 3px 20px;
+    flex-direction: row;
+}
+
+/* Se replica el header solo que se pone flex start.  */
+footer {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: #D3D3D3;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* le quite los bullets, flex para poder mover elementos hijos, 
+un tamano w maximo como container principal. no debe ser escalable
+se centra horizontalmente y se aplica espacio igualitario entre elementos */
+footer ul {
+    list-style: none;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/* se modifica el tamano del font, color y se le quita la linea de los hipervinculos
+con text decoration none. */
+.footer-list li a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
